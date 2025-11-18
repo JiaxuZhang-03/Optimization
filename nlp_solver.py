@@ -49,7 +49,7 @@ if __name__ == "__main__":
         ])
 
     solver = Solver(f,grad_f,start_point=[0,0])
-    print("GD:",solver.gradient_descent())
+    print("GD:",solver.gradient_descent()) # It needs more than 3w steps to converge to the optimal result.
     print("NM:",solver.newton_method())    
 
 
